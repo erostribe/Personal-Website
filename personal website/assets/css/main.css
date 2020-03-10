@@ -1,0 +1,175 @@
+.line-1,
+.anim-typewriter {
+    color:#C28996;
+    font-size: 500em;
+}
+a {
+    color:#C28996;
+}
+a:hover { 
+    border-bottom-style: solid; color: #C8CED6;
+}
+
+h1,h2,h3,h4, label {
+    color: #C28996;
+}
+p{
+    color:#67667C;
+}
+
+}
+
+/* HELLO WORLD ANIMATION */
+@import url (https: fonts.googleleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html{
+    min-height: 100%;
+    overflow: hidden;
+}
+body{
+    height: calc(100vh - 8em);
+    padding: 4em;
+    color: c28996;
+    font-family: 'Anonymous Pro', monospace;
+    background-color: ;
+    }
+    .line-1{
+        position: relative;
+        top: 50%;
+        width: 24em;
+        margin: 0 auto;
+        border-right: 2px solid #c28996;
+        font-size: 500%;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translateY(-50%);
+    }
+
+    /* Animation */
+    .anim-typewriter{
+        animation: typewriter 4s steps(30) 1s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+    }
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 9em;}
+    }
+    @keyframes blinkTextCursor{
+        from{border-right-color: #c28996;}
+        to{border-right-color: transparent;}
+    }
+
+    /*About page Projects area */
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        justify-content: space-evenly; 
+        margin: 20px;
+        padding: 20px;
+        
+    }
+    .project1,
+    .project2,
+    .project3 {
+        border-style: solid;
+    }
+   
+
+    /*Resume Button*/
+    .button,
+    .projectbutton,
+    .sendmessage,
+    .blogbutton {
+        background-color: grey;
+        border-radius: 5px;
+        border: 3px solid #C28996;
+        color: #C28996;
+        font-size: 15px;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    button:hover {
+        background-color: navy;
+    }
+       
+    /* Blog Page Styles */
+    .featuredblogpost{
+        border-style: solid;
+        margin: 25px;
+    }
+    .blogsecondary{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .blogpost1,
+    .blogpost2,
+    .blogpost3 {
+        border-style: solid;
+        padding: 50px;
+        margin: 10px;
+    }
+
+    /* Menu Hamburger */
+    .hamburger {
+        margin: 0;
+        padding: 0;
+        background: red;
+        font-family: American Typewriter, serif;
+    }
+
+    #menuToggle
+    {
+        display: block;
+        position: relative;
+        top: 50px;
+        left: 50px;
+
+        z-index: 1;
+
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    #menuToggle a 
+    {
+        text-decoration: none;
+        color: red;
+        transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover{
+        color: grey;
+    }
+
+    #menuToggle input
+    {: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+
+        cursor: pointer;
+
+        opacity: 0; /* hide this */
+        z-index: 2; /*and place it over the hamburger */
+        webkit-touch-callout: nope;
+    }
+
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: #cdcdcd;
+        border-radius: 3px;
+
+        z-index: 1;
+
+        transform-origin: 4px 0px;
+    }
